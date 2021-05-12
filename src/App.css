@@ -33,9 +33,10 @@ body,
 }
 
 #body {
-  height: 100vh;
+  min-height: 100vh;
   /* 부모의 height를 다 받기 위해 */
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   /* 자식을 부모기준으로 가운데로 정렬 */
   padding-bottom: 24px;
@@ -43,5 +44,20 @@ body,
 
 #footer {
   height: 200px;
-  background-color: gray;
+  background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .product-card {
+    width: 100px !important;
+  }
+  #header {
+    padding: 0 8px;
+  }
+  #body {
+    padding: 0 8px;
+  }
+  .ant-carousel {
+    margin: 0 -8px;
+  }
 }

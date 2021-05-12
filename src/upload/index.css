@@ -1,0 +1,49 @@
+#upload-container {
+  padding: 36px;
+}
+
+#upload-img-placeholder {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: cernter;
+  justify-self: center;
+  border: 1px solid rgb(149, 140, 140);
+  background: rgb(172, 172, 177);
+}
+
+#upload-img-placeholder > span {
+  font-size: 14px;
+  color: rgb(23, 22, 26);
+}
+
+.upload-name {
+  width: 300px;
+}
+
+.upload-label {
+  font-size: 18px;
+  width: 80px;
+}
+
+#product-description {
+  height: 120px;
+}
+
+#submit-button {
+  float: right;
+  background-color: rgb(30, 30, 197);
+  color: white;
+  border: none;
+  margin-top: 16px;
+}
+/* flex 부모가 자식을 정렬
+    float 자식이 부모기준으로 본인이 움직여서 정렬 */
+
+#upload-img {
+  width: 200px;
+  height: 200px;
+  margin-left: 16px;
+  object-fit: contain;
+}
